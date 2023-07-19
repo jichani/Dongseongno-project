@@ -2,12 +2,20 @@
 section {
   font-family: "Noto Sans KR", sans-serif;
 }
-section.wrapper {
+section .wrapper {
   width: 80%;
   margin: 0 auto;
 }
 section.first_carousel {
-  margin-top: 20px;
+  position: relative;
+}
+section.first_carousel > div:first-child {
+  position: absolute;
+  top: 46%;
+  width: 100%;
+  height: 25.008vw;
+  background: #ebefef;
+  z-index: 0;
 }
 section.first_carousel .main_text {
   text-align: center;
@@ -37,39 +45,96 @@ section.first_carousel .swiper-slide img {
      object-fit: cover;
 }
 section.first_carousel .first_swiper .text_box {
-  width: 520px;
-  height: 350px;
+  width: 27.0833vw;
+  height: 18.2292vw;
   border: 2px solid #ececec;
   position: relative;
   left: 100px;
   background-color: #fff;
   border-radius: 10px;
+  box-shadow: -2px -2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+section.first_carousel .first_swiper .text_box .text_box_description {
+  color: #7d7d7d;
+  font-family: Noto Sans;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: left;
+  margin-left: 2.0833vw;
+  margin-right: 2.0833vw;
+  margin-top: 1.25vw;
+}
+section.first_carousel .first_swiper .text_box > div:nth-child(1) {
+  display: flex;
+  border-bottom: 2px solid #ececec;
+  margin-left: 1.3021vw;
+  margin-right: 1.3021vw;
+  height: 5.3125vw;
+}
+section.first_carousel .first_swiper .text_box > div:nth-child(1) button {
+  background-color: #f54747;
+  border: none;
+  border-radius: 20px;
+  width: 3.6458vw;
+  height: 1.5625vw;
+  font-size: 0.8333vw;
+  color: #efefef;
+  margin-left: 2.3958vw;
+  margin-top: 2.5vw;
+}
+section.first_carousel .first_swiper .text_box > div:nth-child(1) > div {
+  margin-top: 1.6667vw;
+  margin-left: 0.7813vw;
+}
+section.first_carousel .first_swiper .text_box > div:nth-child(1) > div .text_box_main_text {
+  font-size: 1.3542vw;
+  font-weight: bold;
+}
+section.first_carousel .first_swiper .text_box > div:nth-child(1) > div .text_box_location {
+  display: flex;
+  margin-top: 0.5vw;
+}
+section.first_carousel .first_swiper .text_box > div:nth-child(1) > div .text_box_location img {
+  width: 0.7292vw;
+  height: 1.0417vw;
+  margin-right: 0.5vw;
+}
+section.first_carousel .first_swiper .text_box > div:nth-child(1) > div .text_box_location p {
+  color: #959595;
+  font-size: 0.8333vw;
 }
 section.first_carousel .first_swiper img {
-  width: 1020px;
-  height: 580px;
+  width: 53.125vw;
+  height: 30.2083vw;
+}
+
+.swiper-button-lock {
+  display: block;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
   color: #959595;
   position: relative;
+  z-index: 10;
 }
-
-.swiper-button-next {
+.swiper-button-next.swiper-button-next,
+.swiper-button-prev.swiper-button-next {
   left: 150px;
   bottom: 80px;
 }
-
-.swiper-button-prev {
+.swiper-button-next.swiper-button-next:after,
+.swiper-button-prev.swiper-button-next:after {
+  font-size: 24px;
+}
+.swiper-button-next.swiper-button-prev,
+.swiper-button-prev.swiper-button-prev {
   left: 100px;
   bottom: 102px;
 }
-
-.swiper-button-prev:after {
-  font-size: 24px;
-}
-
-.swiper-button-next:after {
+.swiper-button-next.swiper-button-prev:after,
+.swiper-button-prev.swiper-button-prev:after {
   font-size: 24px;
 }/*# sourceMappingURL=first_carousel.css.map */

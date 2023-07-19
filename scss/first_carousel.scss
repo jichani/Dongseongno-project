@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap");
+
+$main-color: #f54747;
+$border-color: #ececec;
+$font-color_W: #efefef;
+$font-color_G: #959595;
+
+$my-font: "Noto Sans KR", sans-serif;
+
+$size-1920-1px: 0.0521vw;
+
+section {
+  font-family: $my-font;
+
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &.first_carousel {
+    position: relative;
+
+    > div:first-child {
+      position: absolute;
+      top: 46%;
+      width: 100%;
+      height: 480 * $size-1920-1px;
+      background: #ebefef;
+      z-index: 0;
+    }
+
+    .main_text {
+      text-align: center;
+      font-weight: normal;
+      font-size: 2.3438vw;
+      margin-bottom: 56px;
+    }
+
+    div {
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      // background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .first_swiper .text_box {
+      width: 27.0833vw;
+      height: 18.2292vw;
+      border: 2px solid $border-color;
+      position: relative;
+      left: 100px;
+      background-color: #fff;
+
+      border-radius: 10px;
+
+      box-shadow: -2px -2px 5px 0px rgba(0, 0, 0, 0.25);
+
+      .text_box_description {
+        color: #7d7d7d;
+        font-family: Noto Sans;
+        font-size: 0.9375vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+
+        text-align: left;
+
+        margin-left: 2.0833vw;
+        margin-right: 2.0833vw;
+        margin-top: 1.25vw;
+      }
+
+      > div:nth-child(1) {
+        display: flex;
+        border-bottom: 2px solid $border-color;
+        margin-left: 1.3021vw;
+        margin-right: 1.3021vw;
+
+        height: 5.3125vw;
+
+        button {
+          background-color: $main-color;
+          border: none;
+          border-radius: 20px;
+          width: 3.6458vw;
+          height: 1.5625vw;
+
+          font-size: 0.8333vw;
+          color: $font-color_W;
+
+          margin-left: 2.3958vw;
+          margin-top: 2.5vw;
+        }
+
+        > div {
+          margin-top: 1.6667vw;
+          margin-left: 0.7813vw;
+
+          .text_box_main_text {
+            font-size: 1.3542vw;
+            font-weight: bold;
+          }
+          .text_box_location {
+            display: flex;
+            margin-top: 0.5vw;
+
+            img {
+              width: 0.7292vw;
+              height: 1.0417vw;
+              margin-right: 0.5vw;
+            }
+
+            p {
+              color: $font-color_G;
+              font-size: 0.8333vw;
+            }
+          }
+        }
+      }
+    }
+
+    .first_swiper img {
+      width: 53.125vw;
+      height: 30.2083vw;
+    }
+  }
+}
+
+.swiper-button-lock {
+  display: block;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $font-color_G;
+  position: relative;
+  z-index: 10;
+
+  &.swiper-button-next {
+    left: 150px;
+    bottom: 80px;
+
+    &:after {
+      font-size: 24px;
+    }
+  }
+
+  &.swiper-button-prev {
+    left: 100px;
+    bottom: 102px;
+
+    &:after {
+      font-size: 24px;
+    }
+  }
+}
