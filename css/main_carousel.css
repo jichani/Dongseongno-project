@@ -64,6 +64,7 @@ main section.main_carousel {
   /* font-size: 24px; */
   font-weight: normal;
   color: #eee;
+  margin-bottom: 1vw;
 }
 
 .slide_text h2 {
