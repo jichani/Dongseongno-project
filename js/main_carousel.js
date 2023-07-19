@@ -11,7 +11,7 @@ var swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   autoplay: {
     delay: 4000,
-    disableOnInteraction: false
+    disableOnInteraction: true,
   },
   on: {
     autoplayTimeLeft(s, time, progress) {

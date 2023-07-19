@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap");
-section.first_carousel {
-  font-family: "Noto Sans KR", sans-serif;
-}
-section.first_carousel .wrapper {
+.wrapper {
   width: 80%;
   margin: 0 auto;
+}
+
+section.first_carousel {
+  font-family: "Noto Sans KR", sans-serif;
+  height: 45.327vw;
 }
 section.first_carousel.first_carousel {
   position: relative;
@@ -52,7 +54,7 @@ section.first_carousel.first_carousel .first_swiper .text_box {
   left: 100px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: -2px -2px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: -2px -2px 5px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 section.first_carousel.first_carousel .first_swiper .text_box .text_box_description {
@@ -92,6 +94,7 @@ section.first_carousel.first_carousel .first_swiper .text_box > div:nth-child(1)
 section.first_carousel.first_carousel .first_swiper .text_box > div:nth-child(1) > div .text_box_main_text {
   font-size: 1.3542vw;
   font-weight: bold;
+  text-align: left;
 }
 section.first_carousel.first_carousel .first_swiper .text_box > div:nth-child(1) > div .text_box_location {
   display: flex;
@@ -134,5 +137,31 @@ section.first_carousel .swiper_button .swiper-button-prev.swiper-button-next:aft
 }
 section.first_carousel .swiper_button .swiper-button-next.swiper-button-prev:after,
 section.first_carousel .swiper_button .swiper-button-prev.swiper-button-prev:after {
+  font-size: 1.2504vw;
+}
+
+section.second_carousel {
+  height: 45.327vw;
+}
+section.second_carousel .main_text {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.3438vw;
+  margin-bottom: 56px;
+  margin-top: 6.252vw;
+}
+section.second_carousel div span {
+  font-weight: bold;
+}
+section.second_carousel .swiper-button-next,
+section.second_carousel .swiper-button-prev {
+  color: #fff;
+  background-color: #f54747;
+  border-radius: 50%;
+  width: 3.126vw;
+  height: 3.126vw;
+}
+section.second_carousel .swiper-button-next:after,
+section.second_carousel .swiper-button-prev:after {
   font-size: 1.2504vw;
 }/*# sourceMappingURL=first_carousel.css.map */

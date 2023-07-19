@@ -9,13 +9,14 @@ $my-font: "Noto Sans KR", sans-serif;
 
 $size-1920-1px: 0.0521vw;
 
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
 section.first_carousel {
   font-family: $my-font;
-
-  .wrapper {
-    width: 80%;
-    margin: 0 auto;
-  }
+  height: 870 * $size-1920-1px;
 
   &.first_carousel {
     position: relative;
@@ -73,7 +74,7 @@ section.first_carousel {
 
       border-radius: 10px;
 
-      box-shadow: -2px -2px 5px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: -2px -2px 5px 0px rgba(0, 0, 0, 0.1);
       overflow: hidden;
 
       .text_box_description {
@@ -120,6 +121,7 @@ section.first_carousel {
           .text_box_main_text {
             font-size: 1.3542vw;
             font-weight: bold;
+            text-align: left;
           }
           .text_box_location {
             display: flex;
@@ -171,6 +173,37 @@ section.first_carousel {
           font-size: 24 * $size-1920-1px;
         }
       }
+    }
+  }
+}
+
+section.second_carousel {
+  height: 870 * $size-1920-1px;
+
+  .main_text {
+    text-align: center;
+    font-weight: normal;
+    font-size: 2.3438vw;
+    margin-bottom: 56px;
+    margin-top: 120 * $size-1920-1px;
+  }
+
+  div {
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+    background-color: $main-color;
+    border-radius: 50%;
+    width: 60 * $size-1920-1px;
+    height: 60 * $size-1920-1px;
+
+    &:after {
+      font-size: 24 * $size-1920-1px;
     }
   }
 }
