@@ -9,7 +9,7 @@ $my-font: "Noto Sans KR", sans-serif;
 
 $size-1920-1px: 0.0521vw;
 
-section {
+section.first_carousel {
   font-family: $my-font;
 
   .wrapper {
@@ -74,6 +74,7 @@ section {
       border-radius: 10px;
 
       box-shadow: -2px -2px 5px 0px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
 
       .text_box_description {
         color: #7d7d7d;
@@ -144,33 +145,32 @@ section {
       height: 30.2083vw;
     }
   }
-}
-
-.swiper-button-lock {
-  display: block;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: $font-color_G;
-  position: relative;
-  z-index: 10;
-
-  &.swiper-button-next {
-    left: 150 * $size-1920-1px;
-    bottom: 80 * $size-1920-1px;
-
-    &:after {
-      font-size: 24 * $size-1920-1px;
-    }
+  .swiper-button-lock {
+    display: block;
   }
 
-  &.swiper-button-prev {
-    left: 100 * $size-1920-1px;
-    bottom: 102 * $size-1920-1px;
+  .swiper_button {
+    position: relative;
+    left: 120 * $size-1920-1px;
+    bottom: 70 * $size-1920-1px;
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: $font-color_G;
+      position: absolute;
+      z-index: 10;
 
-    &:after {
-      font-size: 24 * $size-1920-1px;
+      &.swiper-button-next {
+        left: 50 * $size-1920-1px;
+        &:after {
+          font-size: 24 * $size-1920-1px;
+        }
+      }
+
+      &.swiper-button-prev {
+        &:after {
+          font-size: 24 * $size-1920-1px;
+        }
+      }
     }
   }
 }
