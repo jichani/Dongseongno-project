@@ -157,20 +157,20 @@ section {
   z-index: 10;
 
   &.swiper-button-next {
-    left: 150px;
-    bottom: 80px;
+    left: 150 * $size-1920-1px;
+    bottom: 80 * $size-1920-1px;
 
     &:after {
-      font-size: 24px;
+      font-size: 24 * $size-1920-1px;
     }
   }
 
   &.swiper-button-prev {
-    left: 100px;
-    bottom: 102px;
+    left: 100 * $size-1920-1px;
+    bottom: 102 * $size-1920-1px;
 
     &:after {
-      font-size: 24px;
+      font-size: 24 * $size-1920-1px;
     }
   }
 }
