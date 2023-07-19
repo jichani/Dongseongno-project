@@ -8,47 +8,68 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./main_carousel.css">
+  <link rel="stylesheet" href="./css/first_carousel.css">
 </head>
 
 <body>
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image: url('./img/Frame1.png')">
-        <div class="slide_text">
-          <h4>대구 광역시 문화와 쇼핑의 중심지</h4>
-          <h2>지금 여기는 동성로</h2>
+  <section>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/Frame1.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/Frame2.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/Frame3.png" />
         </div>
       </div>
-      <div class="swiper-slide" style="background-image: url('./img/Frame2.png')">
-        <div class="slide_text">
-          <h4>대구 광역시 문화와 쇼핑의 중심지</h4>
-          <h2>지금 여기는 동성로</h2>
-        </div>
-      </div>
-      <div class="swiper-slide" style="background-image: url('./img/Frame3.png')">
-        <div class="slide_text">
-          <h4>대구 광역시 문화와 쇼핑의 중심지</h4>
-          <h2>지금 여기는 동성로</h2>
-        </div>
+      <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
       </div>
     </div>
-    <div class="swiper-pagination"></div>
-    <div class="autoplay-progress">
-      <svg viewBox="0 0 48 48">
-        <circle cx="24" cy="24" r="20"></circle>
-      </svg>
-      <span></span>
-    </div>
-  </div>
 
-  <div>sdsadsadsa</div>
+    <div class="slide_text">
+      <h4>대구 광역시 문화와 쇼핑의 중심지</h4>
+      <h2>지금 여기는 동성로</h2>
+    </div>
+  </section>
+
+  <section class="wrapper first_carousel">
+    <div class="main_text">
+      특별한 동성로
+      <span>여행지</span>
+    </div>
+
+    <div class="swiper first_swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="text_box">1번째 입니다.</div>
+          <img src="./img/first_carousel1.png" alt="first_carousel1" />
+        </div>
+        <div class="swiper-slide">
+          <div class="text_box">2번째 입니다.</div>
+          <img src="./img/Frame2.png" alt="first_carousel1" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+  </section>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
+  <script src="./first_carousel.js"></script>
   <script src="./main_carousel.js"></script>
+
 </body>
 
 </html>
