@@ -37,7 +37,7 @@ function onGeoOk() {
       const iconurl = weatherURL[iconcode];
       // console.log(iconurl);
       const weatherIcon = document.querySelector("#weather span:first-child");
-      weatherIcon.innerHTML = `<img src="${iconurl}" alt="weather icon">`;
+      weatherIcon.innerHTML = `<img src="${weatherURL["09d"]}" alt="weather icon">`;
     });
 }
 
