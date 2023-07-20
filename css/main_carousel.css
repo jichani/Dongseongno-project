@@ -7,7 +7,7 @@
 
 html,
 body {
-  padding-top: 90px;
+  padding-top: 100px;
   position: relative;
   height: 90%;
   font-family: 'Noto Sans KR', sans-serif;
@@ -28,7 +28,6 @@ main section.main_carousel {
 
 .swiper {
   width: 96%;
-  height: 96%;
 }
 
 .swiper-slide img {

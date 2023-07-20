@@ -194,6 +194,10 @@ section.second_carousel {
     }
   }
 
+  .wrapper {
+    width: 80%;
+  }
+
   .swiper-button-next,
   .swiper-button-prev {
     color: #fff;
@@ -201,9 +205,36 @@ section.second_carousel {
     border-radius: 50%;
     width: 60 * $size-1920-1px;
     height: 60 * $size-1920-1px;
+    z-index: 100;
+    top: 46%;
 
     &:after {
       font-size: 24 * $size-1920-1px;
+    }
+  }
+
+  .swiper-button-lock {
+    display: block;
+  }
+
+  .swiper-wrapper {
+    .swiper-slide {
+      height: 600px;
+      display: block;
+      img {
+        width: 300 * $size-1920-1px;
+      }
+      .festival_text {
+        margin-left: 10px;
+        border-left: 1px solid $ccc;
+
+        color: #7e7e7e;
+        font-family: Noto Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
     }
   }
 }

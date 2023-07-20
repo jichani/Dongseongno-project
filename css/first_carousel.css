@@ -153,6 +153,9 @@ section.second_carousel .main_text {
 section.second_carousel div span {
   font-weight: bold;
 }
+section.second_carousel .wrapper {
+  width: 80%;
+}
 section.second_carousel .swiper-button-next,
 section.second_carousel .swiper-button-prev {
   color: #fff;
@@ -160,8 +163,29 @@ section.second_carousel .swiper-button-prev {
   border-radius: 50%;
   width: 3.126vw;
   height: 3.126vw;
+  z-index: 100;
+  top: 46%;
 }
 section.second_carousel .swiper-button-next:after,
 section.second_carousel .swiper-button-prev:after {
   font-size: 1.2504vw;
+}
+section.second_carousel .swiper-button-lock {
+  display: block;
+}
+section.second_carousel .swiper-wrapper .swiper-slide {
+  height: 600px;
+  display: block;
+}
+section.second_carousel .swiper-wrapper .swiper-slide img {
+  width: 15.63vw;
+}
+section.second_carousel .swiper-wrapper .swiper-slide .festival_text {
+  border-left: 1px solid #ececec;
+  color: #7e7e7e;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }/*# sourceMappingURL=first_carousel.css.map */
