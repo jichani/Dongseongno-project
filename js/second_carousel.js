@@ -1,5 +1,5 @@
 var swiper = new Swiper(".second-swiper", {
-  slidesPerView: 3,
+  slidesPerView: 4,
   spaceBetween: 30,
   // loop: true,
   navigation: {
@@ -12,4 +12,6 @@ var swiper = new Swiper(".second-swiper", {
   },
   mousewheel: false,
   keyboard: true,
+
 });
+
