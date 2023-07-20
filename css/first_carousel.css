@@ -13,10 +13,12 @@
   align-items: center;
   margin-bottom: 0.1563vw;
 }
+#weather span {
+  margin-right: 0.8336vw;
+}
 #weather span img {
   width: 2.084vw;
   height: 2.084vw;
-  margin-right: 0.8336vw;
 }
 
 section.first_carousel {

@@ -1,46 +1,44 @@
-const API_KEY = "30e79371b742b9bec1172834c51dec60";
+function getWeatherData() {
+  const API_KEY = "30e79371b742b9bec1172834c51dec60";
 
-function onGeoOk() {
-  const weatherURL = {
-    "01d": "./img/clear.png",
-    "01n": "./img/clear.png",
-    "02d": "./img/few_clouds.png",
-    "02n": "./img/few_clouds.png",
-    "03d": "./img/clouds.png",
-    "03n": "./img/clouds.png",
-    "04d": "./img/clouds.png",
-    "04n": "./img/clouds.png",
-    "13d": "./img/snow.png",
-    "09d": "./img/rain.png",
-    "10d": "./img/rain.png",
-    "11d": "./img/thunder.png",
-    "50d": "./img/mist.png",
-  }
-  // 중파 위도, 경도
+  const weatherData = {
+    "01d": { img: "clear", text: "맑음" },
+    "01n": { img: "clear", text: "맑음" },
+    "02d": { img: "few_clouds", text: "구름 많음" },
+    "02n": { img: "few_clouds", text: "구름 많음" },
+    "03d": { img: "clouds", text: "흐림" },
+    "03n": { img: "clouds", text: "흐림" },
+    "04d": { img: "clouds", text: "흐림" },
+    "04n": { img: "clouds", text: "흐림" },
+    "13d": { img: "snow", text: "눈" },
+    "09d": { img: "rain", text: "비" },
+    "10d": { img: "rain", text: "비" },
+    "11d": { img: "thunder", text: "번개" },
+    "50d": { img: "mist", text: "안개" },
+  };
+
+  // 대구 동성로 중앙 파출소 위도, 경도
   const lat = 35.8672;
   const lon = 128.5936;
-  // console.log("You live in", lat, lon);
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
   fetch(url).then((response) => response.json())
     .then((data) => {
+      const weatherElement = document.querySelector("#weather");
+      const weatherIcon = weatherElement.querySelector("span:first-child");
+      const weatherText = weatherElement.querySelector("span:nth-child(2)");
       const weather = document.querySelector("#weather span:last-child")
+
       const temp = data.main.temp
-      const tempString = temp.toString().substring(0, 4);
-      // console.dir(tempString)
+      const tempString = temp.toFixed(1);
 
       weather.innerText = `${tempString}°C`
 
-      // console.log(data);
-      // console.log(data.weather[0].icon)
-
-      const iconcode = data.weather[0].icon;
-      const iconurl = weatherURL[iconcode];
+      const weatherIconCode = data.weather[0].icon;
+      const weatheIconUrl = weatherData[weatherIconCode].img;
       // console.log(iconurl);
-      const weatherIcon = document.querySelector("#weather span:first-child");
-      weatherIcon.innerHTML = `<img src="${iconurl}" alt="weather icon">`;
+      weatherIcon.innerHTML = `<img src="./img/${weatheIconUrl}.png" alt="weather icon">`;
+      weatherText.innerHTML = weatherData[weatherIconCode].text;
     });
 }
 
-
-onGeoOk();
-// onGeoOk({sexyObj})
+getWeatherData();
