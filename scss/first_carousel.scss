@@ -9,6 +9,10 @@ $my-font: "Noto Sans KR", sans-serif;
 
 $size-1920-1px: 0.0521vw;
 
+:root {
+  --swiper-pagination-color: #f54747;
+}
+
 .wrapper {
   width: 80%;
   margin: 0 auto;
@@ -178,7 +182,7 @@ section.first_carousel {
 }
 
 section.second_carousel {
-  height: 870 * $size-1920-1px;
+  height: 840 * $size-1920-1px;
 
   .main_text {
     text-align: center;
@@ -219,22 +223,101 @@ section.second_carousel {
 
   .swiper-wrapper {
     .swiper-slide {
-      height: 600px;
+      // border: 1px solid red;
+      height: 600 * $size-1920-1px;
       display: block;
       img {
         width: 300 * $size-1920-1px;
       }
       .festival_text {
-        margin-left: 10px;
-        border-left: 1px solid $ccc;
-
-        color: #7e7e7e;
+        margin-top: -8 * $size-1920-1px;
+        margin-left: 22 * $size-1920-1px;
+        border-left: 1px solid #ccc;
+        text-align: left;
         font-family: Noto Sans;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+
+        height: 110 * $size-1920-1px;
+
+        p:nth-child(1) {
+          color: var(--sub-text, #7e7e7e);
+          font-size: 16 * $size-1920-1px;
+          font-weight: 500;
+          margin-left: 20 * $size-1920-1px;
+          padding-top: 25 * $size-1920-1px;
+          line-height: 1.3;
+        }
+
+        p:nth-child(2) {
+          color: var(--font-color, #333);
+          font-family: Noto Sans;
+          font-size: 24 * $size-1920-1px;
+          font-weight: 600;
+
+          margin-left: 20 * $size-1920-1px;
+          margin-top: 44 * $size-1920-1px;
+        }
+
+        p:nth-child(3) {
+          color: #2c3047;
+          font-family: Noto Sans;
+          font-size: 14 * $size-1920-1px;
+          font-weight: 500;
+
+          margin-left: 20 * $size-1920-1px;
+          margin-top: 9 * $size-1920-1px;
+        }
+      }
+      .festival_second_text {
+        margin-top: -3 * $size-1920-1px;
+        margin-left: 21 * $size-1920-1px;
+        border-left: 1px solid #ccc;
+        text-align: left;
+        font-family: Noto Sans;
+
+        height: 100 * $size-1920-1px;
+
+        p:nth-child(1) {
+          color: var(--sub-text, #7e7e7e);
+          font-size: 16 * $size-1920-1px;
+          font-weight: 500;
+          margin-left: 20 * $size-1920-1px;
+          padding-top: 20 * $size-1920-1px;
+        }
+
+        p:nth-child(2) {
+          color: var(--sub-text, #7e7e7e);
+          font-size: 16 * $size-1920-1px;
+          font-weight: 500;
+          margin-left: 20 * $size-1920-1px;
+
+          margin-top: 5 * $size-1920-1px;
+        }
+
+        p:nth-child(3) {
+          color: var(--font-color, #333);
+          font-family: Noto Sans;
+          font-size: 24 * $size-1920-1px;
+          font-weight: 600;
+
+          margin-left: 20 * $size-1920-1px;
+          margin-top: 26 * $size-1920-1px;
+        }
+
+        p:nth-child(4) {
+          color: #2c3047;
+          font-family: Noto Sans;
+          font-size: 14 * $size-1920-1px;
+          font-weight: 500;
+
+          margin-left: 20 * $size-1920-1px;
+          margin-top: 9 * $size-1920-1px;
+        }
       }
     }
   }
+}
+
+section.knowledge_in {
+  height: 690 * $size-1920-1px;
+  background: #ebefef;
 }
