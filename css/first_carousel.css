@@ -8,6 +8,17 @@
   margin: 0 auto;
 }
 
+#weather {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.1563vw;
+}
+#weather span img {
+  width: 2.605vw;
+  height: 2.084vw;
+  margin-right: 0.8336vw;
+}
+
 section.first_carousel {
   font-family: "Noto Sans KR", sans-serif;
   height: 45.327vw;
