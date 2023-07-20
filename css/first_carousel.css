@@ -8,6 +8,10 @@
   margin: 0 auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 #weather {
   display: flex;
   align-items: center;
@@ -17,6 +21,7 @@
   margin-right: 0.8336vw;
 }
 #weather span img {
+  margin-top: 0.0521vw;
   width: 2.084vw;
   height: 2.084vw;
 }

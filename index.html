@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/mordal.css" />
   <link rel="stylesheet" href="./css/header.css" />
   <link rel="stylesheet" href="./css/footer.css" />
   <link rel="stylesheet" href="./css/main_carousel.css" />
@@ -77,11 +78,47 @@
           <span></span>
           <span></span>
         </div>
-        <button>로그인</button>
+        <button class="main_login_btn">로그인</button>
         <button>회원가입</button>
       </div>
     </div>
   </header>
+
+  <dialog>
+    <form method="dialog">
+      <button value="close" class="close_btn"><i class="fa-solid fa-x"></i></button>
+      <!-- <button value="confirm">confirm</button> -->
+    </form>
+    <div class="form-box">
+      <div class="form-value">
+        <form action="">
+          <h2>로그인</h2>
+          <div class="inputbox">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="text" minlength="5" id="userid" required>
+            <label for="userid">아이디</label>
+          </div>
+          <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" minlength="5" id="userpassword" required>
+            <label for="userpassword">비밀번호</label>
+          </div>
+          <div class="forget">
+            <label for="">
+              <a href="#">아이디 찾기</a>
+              <a href="#">비밀번호 찾기</a>
+            </label>
+          </div>
+          <button class="login_btn">로그인</button>
+          <button class="register_btn">회원가입</button>
+        </form>
+      </div>
+    </div>
+    <div class="border_line"></div>
+    <p class="sns_login">SNS 간편 로그인</p>
+
+
+  </dialog>
 
   <main>
     <section class="main_carousel">
@@ -326,6 +363,7 @@
   <script src="./js/main_carousel.js"></script>
 
   <script src="./js/weather.js"></script>
+  <script src="./js/mordal.js"></script>
 
 </body>
 
