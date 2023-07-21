@@ -37,7 +37,6 @@ function getWeatherData() {
       const weatherIconCode = data.weather[0].icon;
       // console.log(data.weather[0]);
       const weatheIconUrl = weatherData[weatherIconCode].img;
-      // const iconUrl = `http://openweathermap.org/img/w/${weatherIconCode}.png`;
       // console.log(iconurl);
       weatherIcon.innerHTML = `<img src="./img/${weatheIconUrl}.png" alt="weather icon">`;
       weatherText.innerHTML = weatherData[weatherIconCode].text;
