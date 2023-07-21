@@ -35,6 +35,7 @@ function getWeatherData() {
       weather.innerText = `${tempString}°C`
 
       const weatherIconCode = data.weather[0].icon;
+      // console.log(data.weather[0]);
       const weatheIconUrl = weatherData[weatherIconCode].img;
       // console.log(iconurl);
       weatherIcon.innerHTML = `<img src="./img/${weatheIconUrl}.png" alt="weather icon">`;
