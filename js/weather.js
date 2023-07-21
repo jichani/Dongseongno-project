@@ -1,6 +1,7 @@
-function getWeatherData() {
-  const API_KEY = "30e79371b742b9bec1172834c51dec60";
+// key값 사용하기
+const API_KEY = config.WHETHER_API_KEY;
 
+function getWeatherData() {
   const weatherData = {
     "01d": { img: "clear", text: "맑음" },
     "01n": { img: "clear", text: "맑음" },
