@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap");
 :root {
+  --swiper-theme-color: #f54747;
   --swiper-pagination-color: #f54747;
+}
+
+body {
+  padding-top: 120px;
+  position: relative;
+  height: 90%;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .wrapper {
@@ -276,4 +284,4 @@ section.second_carousel .swiper-wrapper .swiper-slide .festival_second_text p:nt
 section.knowledge_in {
   height: 35.949vw;
   background: #ebefef;
-}/*# sourceMappingURL=first_carousel.css.map */
+}/*# sourceMappingURL=main.css.map */

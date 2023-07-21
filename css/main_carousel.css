@@ -1,26 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  padding-top: 100px;
-  position: relative;
-  height: 90%;
-  font-family: 'Noto Sans KR', sans-serif;
-}
-
-body {
-  background: #fff;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
 
 main section.main_carousel {
   padding-top: 20px;
@@ -109,10 +88,6 @@ main section.main_carousel {
 
 .autoplay-progress span {
   z-index: 100;
-}
-
-:root {
-  --swiper-theme-color: #f54747;
 }
 
 
