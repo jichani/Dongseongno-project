@@ -68,17 +68,10 @@ h2 {
   width: 100%;
   border: 2px solid #ECECEC;
   border-radius: 10px;
+
 }
 
 .inputbox label {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-  color: #bbb;
-  font-size: 1em;
-  pointer-events: none;
-  transition: .5s;
   /* background: white; */
   padding-left: 5px;
   padding-right: 5px;

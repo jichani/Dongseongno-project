@@ -165,7 +165,7 @@ section.first_carousel {
   &.first_carousel {
     position: relative;
 
-    > div:first-child {
+    > div.gray_section {
       position: absolute;
       top: 46%;
       width: 100%;
@@ -522,6 +522,8 @@ section.knowledge_in {
 }
 
 section.sns_item {
+  position: relative;
+  z-index: 1;
   .main_text {
     padding-top: 142 * $size-1920-1px;
     margin-bottom: 79 * $size-1920-1px;
@@ -535,20 +537,36 @@ section.sns_item {
         &:nth-child(1) {
           margin-left: 22 * $size-1920-1px;
           margin-right: 22 * $size-1920-1px;
+          width: 450 * $size-1920-1px;
+          height: 254 * $size-1920-1px;
+          object-fit: cover;
         }
         &:nth-child(2) {
           // border: 1px solid red;
           position: absolute;
-          left: 15px;
-          bottom: 40px;
+          left: 35px;
+          bottom: 155px;
         }
+      }
+      a {
+        color: black;
+        text-decoration: none;
       }
       p {
         text-align: center;
         margin-top: 45 * $size-1920-1px;
         font-weight: 700;
         font-size: 24 * $size-1920-1px;
+        margin-bottom: 110 * $size-1920-1px;
       }
     }
+  }
+  > div.gray_section {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    height: 350 * $size-1920-1px;
+    background: #ebefef;
+    z-index: -1;
   }
 }

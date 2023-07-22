@@ -40,6 +40,12 @@ function getWeatherData() {
       // console.log(iconurl);
       weatherIcon.innerHTML = `<img src="./img/${weatheIconUrl}.png" alt="weather icon">`;
       weatherText.innerHTML = weatherData[weatherIconCode].text;
+    }).catch(error => {
+      const weatherElement = document.querySelector("#weather");
+      const weatherText = weatherElement.querySelector("span:nth-child(2)");
+      weatherText.innerHTML = `
+      Loading...
+      `;
     });
 }
 

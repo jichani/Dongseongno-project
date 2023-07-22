@@ -73,7 +73,7 @@
 
       <div class="right_nav">
         <div id="weather">
-          <span>Loading...</span>
+          <span></span>
           <span></span>
           <span></span>
         </div>
@@ -94,13 +94,13 @@
           <h2>로그인</h2>
           <div class="inputbox">
             <ion-icon name="mail-outline"></ion-icon>
-            <input type="text" minlength="5" id="userid" required>
-            <label for="userid">아이디</label>
+            <input placeholder="아이디" type="text" minlength="5" id="userid" required>
+            <label for="userid"></label>
           </div>
           <div class="inputbox">
             <ion-icon name="lock-closed-outline"></ion-icon>
-            <input type="password" minlength="5" id="userpassword" required>
-            <label for="userpassword">비밀번호</label>
+            <input placeholder="비밀번호" type="password" minlength="5" id="userpassword" required>
+            <label for="userpassword"></label>
           </div>
           <div class="forget">
             <label for="">
@@ -149,7 +149,7 @@
     </section>
 
     <section class="first_carousel">
-      <div></div>
+      <div class="gray_section"></div>
       <div class="wrapper">
         <div class="main_text">
           특별한 동성로
@@ -341,22 +341,22 @@
         <div class="notice_items">
           <div>
             <img src="./img/round.svg" alt="*">
-            <p>분위기 좋은 술집 알려주세요</p>
+            <p>분위기 좋은 술집 알려주세요1</p>
             <p>조회:26 답변:2</p>
           </div>
           <div>
             <img src="./img/round.svg" alt="*">
-            <p>분위기 좋은 술집 알려주세요</p>
+            <p>분위기 좋은 술집 알려주세요2</p>
             <p>조회:26 답변:2</p>
           </div>
           <div>
             <img src="./img/round.svg" alt="*">
-            <p>분위기 좋은 술집 알려주세요</p>
+            <p>분위기 좋은 술집 알려주세요3</p>
             <p>조회:26 답변:2</p>
           </div>
           <div>
             <img src="./img/round.svg" alt="*">
-            <p>분위기 좋은 술집 알려주세요</p>
+            <p>분위기 좋은 술집 알려주세요4</p>
             <p>조회:26 답변:2</p>
           </div>
           <div>
@@ -387,8 +387,8 @@
       <div class="main_text">
         <span>SNS</span>로 만나는 동성로
       </div>
-      <div class="sns_items">
-        <div>
+      <div class="sns_items" id="youtube_results">
+        <!-- <div>
           <img src="./img/youtube.png" alt="">
           <img src="./img/youtube_icon.png" alt="">
           <p>스파크랜드 직원 v-log</p>
@@ -398,12 +398,13 @@
           <img src="./img/youtube_icon.png" alt="">
           <p>스파크랜드 직원 v-log</p>
         </div>
-        <div class="sns_last_img">
+        <div>
           <img src="./img/youtube.png" alt="">
           <img src="./img/youtube_icon.png" alt="">
           <p>스파크랜드 직원 v-log</p>
-        </div>
+        </div> -->
       </div>
+      <div class="gray_section"></div>
     </section>
   </main>
 
@@ -443,6 +444,7 @@
   <script src="./js/config.js"></script>
   <script src="./js/weather.js"></script>
   <script src="./js/mordal.js"></script>
+  <script src="./js/youtube.js"></script>
 
 </body>
 
