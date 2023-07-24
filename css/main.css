@@ -294,10 +294,9 @@ section.second_carousel .swiper-wrapper .swiper-slide img {
 }
 section.second_carousel .swiper-wrapper .swiper-slide .festival_text {
   margin-top: -0.4168vw;
-  margin-left: 1.1462vw;
   border-left: 1px solid #ccc;
   text-align: left;
-  font-family: Noto Sans;
+  font-family: "Noto Sans KR", sans-serif;
   height: 5.731vw;
 }
 section.second_carousel .swiper-wrapper .swiper-slide .festival_text p:nth-child(1) {
@@ -310,7 +309,7 @@ section.second_carousel .swiper-wrapper .swiper-slide .festival_text p:nth-child
 }
 section.second_carousel .swiper-wrapper .swiper-slide .festival_text p:nth-child(2) {
   color: var(--font-color, #333);
-  font-family: Noto Sans;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 1.2504vw;
   font-weight: 600;
   margin-left: 1.042vw;
@@ -318,7 +317,7 @@ section.second_carousel .swiper-wrapper .swiper-slide .festival_text p:nth-child
 }
 section.second_carousel .swiper-wrapper .swiper-slide .festival_text p:nth-child(3) {
   color: #2c3047;
-  font-family: Noto Sans;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 0.7294vw;
   font-weight: 500;
   margin-left: 1.042vw;
@@ -329,7 +328,7 @@ section.second_carousel .swiper-wrapper .swiper-slide .festival_second_text {
   margin-left: 1.0941vw;
   border-left: 1px solid #ccc;
   text-align: left;
-  font-family: Noto Sans;
+  font-family: "Noto Sans KR", sans-serif;
   height: 5.21vw;
 }
 section.second_carousel .swiper-wrapper .swiper-slide .festival_second_text p:nth-child(1) {

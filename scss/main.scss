@@ -351,10 +351,9 @@ section.second_carousel {
       }
       .festival_text {
         margin-top: -8 * $size-1920-1px;
-        margin-left: 22 * $size-1920-1px;
         border-left: 1px solid #ccc;
         text-align: left;
-        font-family: Noto Sans;
+        font-family: $my-font;
 
         height: 110 * $size-1920-1px;
 
@@ -369,7 +368,7 @@ section.second_carousel {
 
         p:nth-child(2) {
           color: var(--font-color, #333);
-          font-family: Noto Sans;
+          font-family: $my-font;
           font-size: 24 * $size-1920-1px;
           font-weight: 600;
 
@@ -379,7 +378,7 @@ section.second_carousel {
 
         p:nth-child(3) {
           color: #2c3047;
-          font-family: Noto Sans;
+          font-family: $my-font;
           font-size: 14 * $size-1920-1px;
           font-weight: 500;
 
@@ -392,7 +391,7 @@ section.second_carousel {
         margin-left: 21 * $size-1920-1px;
         border-left: 1px solid #ccc;
         text-align: left;
-        font-family: Noto Sans;
+        font-family: $my-font;
 
         height: 100 * $size-1920-1px;
 
