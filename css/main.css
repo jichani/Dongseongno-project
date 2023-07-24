@@ -166,14 +166,14 @@ section.first_carousel.first_carousel .swiper-slide img {
      object-fit: cover;
 }
 section.first_carousel.first_carousel .first_swiper .text_box {
-  width: 27.0833vw;
-  height: 18.2292vw;
+  width: 27.092vw;
+  height: 18.235vw;
   border: 2px solid #ececec;
   position: relative;
   left: 100px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: -2px -2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: -2px -2px 5px 0px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
 section.first_carousel.first_carousel .first_swiper .text_box .text_box_description {
@@ -229,8 +229,8 @@ section.first_carousel.first_carousel .first_swiper .text_box > div:nth-child(1)
   font-size: 0.8333vw;
 }
 section.first_carousel.first_carousel .first_swiper img {
-  width: 53.125vw;
-  height: 30.2083vw;
+  width: 53.142vw;
+  height: 30.218vw;
 }
 section.first_carousel .swiper-button-lock {
   display: block;
@@ -257,6 +257,9 @@ section.first_carousel .swiper_button .swiper-button-prev.swiper-button-next:aft
 section.first_carousel .swiper_button .swiper-button-next.swiper-button-prev:after,
 section.first_carousel .swiper_button .swiper-button-prev.swiper-button-prev:after {
   font-size: 1.2504vw;
+}
+section.first_carousel .swiper-pagination {
+  display: none;
 }
 
 section.second_carousel {
@@ -490,4 +493,113 @@ section.sns_item > div.gray_section {
   height: 18.235vw;
   background: #ebefef;
   z-index: -1;
+}
+
+@media (max-width: 767px) {
+  body .wrapper {
+    width: 97%;
+  }
+  body .main_text {
+    text-align: center;
+    font-weight: normal;
+    font-size: 4.4268vw;
+    margin-bottom: 5.7288vw;
+  }
+  section.main_carousel .swiper {
+    width: 99%;
+  }
+  section.first_carousel {
+    height: 113.274vw;
+  }
+  section.first_carousel .main_text {
+    font-size: 4.4268vw;
+  }
+  section.first_carousel.first_carousel > div.gray_section {
+    position: absolute;
+    top: 46%;
+    width: 100%;
+    height: 62.496vw;
+    background: #ebefef;
+    z-index: 0;
+  }
+  section.first_carousel.first_carousel .first_swiper img {
+    width: 94.7856vw;
+    height: 59.892vw;
+    border-radius: 30px 30px 30px 0px;
+  }
+  section.first_carousel.first_carousel .swiper-slide {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  section.first_carousel.first_carousel .first_swiper .text_box {
+    width: 79.0314vw;
+    height: 40.2318vw;
+    bottom: 140px;
+    left: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ececec;
+    box-shadow: -2px -2px 5px 0px rgba(0, 0, 0, 0.05);
+  }
+  section.first_carousel.first_carousel .first_swiper .text_box > div:nth-child(1) {
+    height: 13.2804vw;
+    margin-left: 3.906vw;
+    margin-right: 3.906vw;
+  }
+  section.first_carousel.first_carousel .first_swiper .text_box > div:nth-child(1) button {
+    width: 10.6764vw;
+    height: 3.906vw;
+    font-size: 2.0832vw;
+    margin-top: 6.1845vw;
+    margin-left: 1.8228vw;
+  }
+  section.first_carousel.first_carousel .first_swiper .text_box > div:nth-child(1) > div {
+    margin-top: 4.1664vw;
+    margin-left: 2.2134vw;
+  }
+  section.first_carousel.first_carousel .first_swiper .text_box > div:nth-child(1) > div .text_box_main_text {
+    font-size: 3.3852vw;
+    margin-bottom: 1.0416vw;
+  }
+  section.first_carousel.first_carousel .first_swiper .text_box > div:nth-child(1) > div .text_box_location {
+    display: flex;
+    margin-top: 0.2604vw;
+  }
+  section.first_carousel.first_carousel .first_swiper .text_box > div:nth-child(1) > div .text_box_location img {
+    width: 2.604vw;
+    height: 2.604vw;
+    margin-right: 0.5vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  section.first_carousel.first_carousel .first_swiper .text_box > div:nth-child(1) > div .text_box_location p {
+    font-size: 2.0832vw;
+    font-weight: 500;
+    margin-top: 0.2vw;
+  }
+  section.first_carousel.first_carousel .first_swiper .text_box .text_box_description {
+    font-size: 2.0832vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2;
+    margin-left: 3.7758vw;
+    margin-right: 3.7758vw;
+    margin-top: 2.8644vw;
+  }
+  section.first_carousel.first_carousel .first_swiper .swiper_button {
+    display: none;
+  }
+  section.first_carousel.first_carousel .first_swiper .swiper-pagination {
+    display: block;
+    position: relative;
+    bottom: 100px;
+  }
+}
+@media (max-width: 429px) {
+  .img-card {
+    width: 100px;
+  }
 }/*# sourceMappingURL=main.css.map */
