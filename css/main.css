@@ -178,7 +178,7 @@ section.first_carousel.first_carousel .first_swiper .text_box {
 }
 section.first_carousel.first_carousel .first_swiper .text_box .text_box_description {
   color: #7d7d7d;
-  font-family: Noto Sans;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 0.9375vw;
   font-style: normal;
   font-weight: 500;
@@ -291,6 +291,8 @@ section.second_carousel .swiper-wrapper .swiper-slide {
 }
 section.second_carousel .swiper-wrapper .swiper-slide img {
   width: 15.63vw;
+  border: 1px solid #ececec;
+  border-radius: 20px 20px 20px 0;
 }
 section.second_carousel .swiper-wrapper .swiper-slide .festival_text {
   margin-top: -0.4168vw;
@@ -324,12 +326,12 @@ section.second_carousel .swiper-wrapper .swiper-slide .festival_text p:nth-child
   margin-top: 0.4689vw;
 }
 section.second_carousel .swiper-wrapper .swiper-slide .festival_second_text {
-  margin-top: -0.1563vw;
-  margin-left: 1.0941vw;
+  margin-top: -0.4168vw;
+  margin-left: 0.0521vw;
   border-left: 1px solid #ccc;
   text-align: left;
   font-family: "Noto Sans KR", sans-serif;
-  height: 5.21vw;
+  height: 5.6268vw;
 }
 section.second_carousel .swiper-wrapper .swiper-slide .festival_second_text p:nth-child(1) {
   color: var(--sub-text, #7e7e7e);
@@ -347,7 +349,7 @@ section.second_carousel .swiper-wrapper .swiper-slide .festival_second_text p:nt
 }
 section.second_carousel .swiper-wrapper .swiper-slide .festival_second_text p:nth-child(3) {
   color: var(--font-color, #333);
-  font-family: Noto Sans;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 1.2504vw;
   font-weight: 600;
   margin-left: 1.042vw;
@@ -355,7 +357,6 @@ section.second_carousel .swiper-wrapper .swiper-slide .festival_second_text p:nt
 }
 section.second_carousel .swiper-wrapper .swiper-slide .festival_second_text p:nth-child(4) {
   color: #2c3047;
-  font-family: Noto Sans;
   font-size: 0.7294vw;
   font-weight: 500;
   margin-left: 1.042vw;
@@ -435,8 +436,8 @@ section.knowledge_in .knowledge_notice .notice_items > div img {
 section.knowledge_in .knowledge_notice .notice_items > div p {
   font-size: 0.9378vw;
   font-style: normal;
-  font-weight: 400;
-  color: var(--sub-text, #7e7e7e);
+  color: var(--font-color, #666);
+  font-weight: 500;
 }
 section.knowledge_in .knowledge_notice .notice_items > div p:nth-child(2) {
   width: 23.0803vw;
@@ -444,6 +445,7 @@ section.knowledge_in .knowledge_notice .notice_items > div p:nth-child(2) {
 }
 section.knowledge_in .knowledge_notice .notice_items > div p:nth-child(3) {
   font-size: 0.8336vw;
+  color: var(--sub-text, #7e7e7e);
 }
 
 section.sns_item {
@@ -494,7 +496,7 @@ section.sns_item > div.gray_section {
   z-index: -1;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body .wrapper {
     width: 97%;
   }
@@ -515,7 +517,7 @@ section.sns_item > div.gray_section {
   }
   section.first_carousel.first_carousel > div.gray_section {
     position: absolute;
-    top: 46%;
+    top: 40%;
     width: 100%;
     height: 62.496vw;
     background: #ebefef;
@@ -596,8 +598,181 @@ section.sns_item > div.gray_section {
     position: relative;
     bottom: 100px;
   }
+  section.second_carousel {
+    height: 109.368vw;
+  }
+  section.second_carousel .wrapper {
+    width: 94%;
+  }
+  section.second_carousel .main_text {
+    margin-bottom: 7.812vw;
+  }
+  section.second_carousel .swiper-button-next,
+  section.second_carousel .swiper-button-prev {
+    display: none;
+  }
+  section.second_carousel .swiper-wrapper .swiper-slide {
+    height: 80.724vw;
+  }
+  section.second_carousel .swiper-wrapper .swiper-slide img {
+    width: 42.966vw;
+  }
+  section.second_carousel .swiper-wrapper .swiper-slide .festival_text {
+    margin-top: -1.0416vw;
+    height: 14.322vw;
+  }
+  section.second_carousel .swiper-wrapper .swiper-slide .festival_text p:nth-child(1) {
+    font-size: 2.0832vw;
+    margin-left: 3.08574vw;
+    padding-top: 3.48936vw;
+  }
+  section.second_carousel .swiper-wrapper .swiper-slide .festival_text p:nth-child(2) {
+    font-size: 3.1248vw;
+    margin-left: 3.08574vw;
+    margin-top: 6.141534vw;
+  }
+  section.second_carousel .swiper-wrapper .swiper-slide .festival_text p:nth-child(3) {
+    font-size: 1.8228vw;
+    margin-left: 3.08574vw;
+    margin-top: 1.25643vw;
+  }
+  section.second_carousel .swiper-wrapper .swiper-slide .festival_second_text {
+    margin-top: -1.0416vw;
+    margin-left: 0.1302vw;
+    height: 14.322vw;
+  }
+  section.second_carousel .swiper-wrapper .swiper-slide .festival_second_text p:nth-child(1) {
+    font-size: 2.0832vw;
+    margin-left: 3.08574vw;
+    padding-top: 3.48936vw;
+  }
+  section.second_carousel .swiper-wrapper .swiper-slide .festival_second_text p:nth-child(2) {
+    font-size: 2.0832vw;
+    margin-left: 3.08574vw;
+    margin-top: 0.651vw;
+  }
+  section.second_carousel .swiper-wrapper .swiper-slide .festival_second_text p:nth-child(3) {
+    font-size: 3.1248vw;
+    margin-left: 3.08574vw;
+    margin-top: 3.3852vw;
+  }
+  section.second_carousel .swiper-wrapper .swiper-slide .festival_second_text p:nth-child(4) {
+    color: #2c3047;
+    font-size: 1.8228vw;
+    margin-left: 3.08574vw;
+    margin-top: 1.1718vw;
+  }
+  section.knowledge_in {
+    height: 119.784vw;
+  }
+  section.knowledge_in .knowledge_title .main_text {
+    padding-top: 11.8482vw;
+    margin-bottom: 2.604vw;
+  }
+  section.knowledge_in .knowledge_title p {
+    font-size: 1.8228vw;
+  }
+  section.knowledge_in .knowledge_title .knowledge_btns {
+    margin-top: 3.1248vw;
+  }
+  section.knowledge_in .knowledge_title .knowledge_btns button {
+    font-size: 2.0832vw;
+  }
+  section.knowledge_in .knowledge_title .knowledge_btns button:nth-child(1) {
+    border-radius: 10px;
+    padding: 1.0416vw 1.5624vw;
+    margin-right: 4.6872vw;
+  }
+  section.knowledge_in .knowledge_title .knowledge_btns button:nth-child(2) {
+    border-radius: 10px;
+    padding: 1.0416vw 1.5624vw;
+  }
+  section.knowledge_in .knowledge_notice {
+    margin-top: 5.9892vw;
+    width: 94.7856vw;
+  }
+  section.knowledge_in .knowledge_notice h2 {
+    padding-top: 6.51vw;
+    margin-left: 8.2026vw;
+    font-size: 3.1248vw;
+  }
+  section.knowledge_in .knowledge_notice .notice_items {
+    margin-left: 7.4214vw;
+    margin-top: 6.51vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding-bottom: 3.1248vw;
+  }
+  section.knowledge_in .knowledge_notice .notice_items > div {
+    display: flex;
+    margin-bottom: 3.906vw;
+  }
+  section.knowledge_in .knowledge_notice .notice_items > div img {
+    width: 1.0416vw;
+    margin-left: 1.302vw;
+    margin-right: 1.953vw;
+  }
+  section.knowledge_in .knowledge_notice .notice_items > div p {
+    font-size: 2.3436vw;
+  }
+  section.knowledge_in .knowledge_notice .notice_items > div p:nth-child(2) {
+    width: 59.3712vw;
+    font-size: 2.3436vw;
+  }
+  section.knowledge_in .knowledge_notice .notice_items > div p:nth-child(3) {
+    font-size: 2.0832vw;
+  }
+  section.sns_item {
+    position: relative;
+    z-index: 1;
+  }
+  section.sns_item .main_text {
+    padding-top: 7.3982vw;
+    margin-bottom: 4.1159vw;
+  }
+  section.sns_item .sns_items {
+    display: flex;
+    justify-content: center;
+  }
+  section.sns_item .sns_items > div {
+    position: relative;
+  }
+  section.sns_item .sns_items > div img:nth-child(1) {
+    margin-left: 1.1462vw;
+    margin-right: 1.1462vw;
+    width: 23.445vw;
+    height: 13.2334vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.sns_item .sns_items > div img:nth-child(2) {
+    position: absolute;
+    left: 35px;
+    bottom: 155px;
+  }
+  section.sns_item .sns_items > div a {
+    color: black;
+    text-decoration: none;
+  }
+  section.sns_item .sns_items > div p {
+    text-align: center;
+    margin-top: 2.3445vw;
+    font-weight: 700;
+    font-size: 1.2504vw;
+    margin-bottom: 5.731vw;
+  }
+  section.sns_item > div.gray_section {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    height: 18.235vw;
+    background: #ebefef;
+    z-index: -1;
+  }
 }
-@media (max-width: 429px) {
+@media (max-width: 430px) {
   .img-card {
     width: 100px;
   }
