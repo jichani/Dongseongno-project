@@ -402,7 +402,7 @@ section.knowledge_in .knowledge_notice .notice_items > div img {
 section.knowledge_in .knowledge_notice .notice_items > div p {
   font-size: 0.9378vw;
   font-style: normal;
-  color: var(--font-color, #666);
+  color: var(--sub-text, #7e7e7e);
   font-weight: 500;
 }
 section.knowledge_in .knowledge_notice .notice_items > div p:nth-child(2) {
@@ -963,10 +963,10 @@ section.sns_item > div.gray_section {
   }
   section.knowledge_in .knowledge_notice .notice_items > div p:nth-child(2) {
     width: 53.498vw;
-    font-size: 3.7216vw;
+    font-size: 3.2564vw;
   }
   section.knowledge_in .knowledge_notice .notice_items > div p:nth-child(3) {
-    font-size: 3.2564vw;
+    font-size: 2.7912vw;
   }
   section.sns_item .main_text {
     padding-top: 8.6062vw;

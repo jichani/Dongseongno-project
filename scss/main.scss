@@ -473,7 +473,7 @@ section.knowledge_in {
         p {
           font-size: 18 * $size-1920-1px;
           font-style: normal;
-          color: var(--font-color, #666);
+          color: var(--sub-text, #7e7e7e);
           font-weight: 500;
 
           &:nth-child(2) {
@@ -1134,10 +1134,10 @@ section.sns_item {
 
             &:nth-child(2) {
               width: 230 * $size-430-1px;
-              font-size: 16 * $size-430-1px;
+              font-size: 14 * $size-430-1px;
             }
             &:nth-child(3) {
-              font-size: 14 * $size-430-1px;
+              font-size: 12 * $size-430-1px;
             }
           }
         }
