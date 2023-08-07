@@ -7,10 +7,7 @@
   <title>동성로랑</title>
   <link type="image/x-icon" rel="icon" sizes="180x180" href="./img/apple-icon-180x180.png" />
   <link rel="stylesheet" href="./css/default.css" />
-  <link rel="stylesheet" href="./css/mapStyle.css">
-  <link rel="stylesheet" href="./css/pagination_toulist.css" />
-  <!-- Fontawesome CDN Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="./css/sns.css" />
 </head>
 
 <body>
@@ -205,97 +202,47 @@
   </dialog>
 
   <main>
-    <section class="map_banner">
-      <img src="./img/toulist_main_img.png" alt="map_banner" class="map_banner">
-      <div class="map_title">
-        <img src="./img/toulist_marker.png" alt="marker">
+    <section class="sns_banner">
+      <img src="./img/sns_main_img.png" alt="main_banner" class="main_banner">
+      <div class="main_title">
+        <img src="./img/youtube_icon2.png" alt="icon">
         <div class="map_title_text">
-          <p>관광지</p>
-          <p>홈 > 여행지 > 관광지</p>
+          <p>SNS</p>
+          <p>홈 > 커뮤니티 > SNS</p>
         </div>
       </div>
     </section>
+  </main>
 
-    <section class="map_section">
+
+  <footer>
+    <div class="footer_inner">
       <div>
-        <div class="item_list">
-        </div>
-        <div class="page_container">
-          <button class="button" id="startBtn" disabled>
-            <i class="fa-solid fa-angles-left"></i>
-          </button>
-          <button class="button prevNext" id="prev" disabled>
-            <i class="fa-solid fa-angle-left"></i>
-          </button>
-
-
-          <div class="links">
-            <div class="links-group active"> <!-- 1~3번 숫자 링크 -->
-              <a href="#" class="link active">1</a>
-              <a href="#" class="link">2</a>
-              <a href="#" class="link">3</a>
-            </div>
-            <div class="links-group"> <!-- 4~6번 숫자 링크 (초기에는 보이지 않음) -->
-              <a href="#" class="link">4</a>
-              <a href="#" class="link">5</a>
-              <a href="#" class="link">6</a>
-            </div>
-            <div class="links-group"> <!-- 7~9번 숫자 링크 (초기에는 보이지 않음) -->
-              <a href="#" class="link">7</a>
-              <a href="#" class="link">8</a>
-              <a href="#" class="link">9</a>
-            </div>
-          </div>
-
-
-          <button class="button prevNext" id="next">
-            <i class="fa-solid fa-angle-right"></i>
-          </button>
-          <button class="button" id="endBtn">
-            <i class="fa-solid fa-angles-right"></i>
-          </button>
-        </div>
+        <p class="copyright">
+          <img src="./img/logo_white.png" alt="footer_logo" />
+          | 개인정보처리방침 | 이용약관
+        </p>
+        <p class="text">
+          (주)동성로랑 | 대표자:정강우 | 사업자번호:499-81-00612 <br />
+          전화번호:070-4948-1181 | 주소:대구 중구 용덕동 12
+        </p>
+        <p class="en">©DONSEUONLORANG. ALL RIGHTS RESERVED</p>
       </div>
-
-      <div id="map"></div>
+      <div class="icon">
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-solid fa-n"></i>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <footer>
-      <div class="footer_inner">
-        <div>
-          <p class="copyright">
-            <img src="./img/logo_white.png" alt="footer_logo" />
-            | 개인정보처리방침 | 이용약관
-          </p>
-          <p class="text">
-            (주)동성로랑 | 대표자:정강우 | 사업자번호:499-81-00612 <br />
-            전화번호:070-4948-1181 | 주소:대구 중구 용덕동 12
-          </p>
-          <p class="en">©DONSEUONLORANG. ALL RIGHTS RESERVED</p>
-        </div>
-        <div class="icon">
-          <i class="fa-brands fa-youtube"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-solid fa-n"></i>
-        </div>
-      </div>
-    </footer>
+  <script src="https://kit.fontawesome.com/59f8fe4f52.js" crossorigin="anonymous"></script>
+  <script src="./js/toggle.js"></script>
 
-    <script type="text/javascript"
-      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6b94c492ea514833ba4fe0a9d6a43b6e&libraries=services"></script>
-
-    <script src="./js/pagenation_none.js"></script>
-    <script src="./js/toulist.js" defer></script>
-    <script src="./js/map_toulist.js"></script>
-
-    <script src="https://kit.fontawesome.com/59f8fe4f52.js" crossorigin="anonymous"></script>
-    <script src="./js/toggle.js"></script>
-
-    <script src="./js/config.js"></script>
-    <script src="./js/weather.js"></script>
-    <script src="./js/mordal.js"></script>
+  <script src="./js/config.js"></script>
+  <script src="./js/weather.js"></script>
+  <script src="./js/mordal.js"></script>
 </body>
 
 </html>
