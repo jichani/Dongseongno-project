@@ -440,8 +440,8 @@ main section.map_section #map {
   }
   main section.map_section .button,
   main section.map_section .link {
-    height: 7.812vw;
     width: 7.812vw;
+    height: 7.812vw;
     font-size: 2.3966vw;
     border-radius: 50%;
   }
