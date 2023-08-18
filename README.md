@@ -23,7 +23,7 @@
 <br>
 
 <p align="center">
-    <img src="./img/readme/Team.png" alt="Team" width="100%" textaling="center"/>
+    <img src="./img/readme/팀원소개.png" alt="Team" width="100%" textaling="center"/>
 </p>
 
 ---
@@ -32,30 +32,21 @@
 
 <br>
 
-- 성인 남녀 835명을 대상으로 조사한 결과 80.1%가 여름 휴가를 계획하고 있다. 또한, 그 중 30.9%가 가까운 국내 여행을 계획하고 있다고 함.
-
 <p align="center">
-    <img src="./images/readme/incruit.png" alt="incruit results" width="80%" textaling="center"/>
+    <img src="./img/readme/기획배경1.png" alt="기획배경1" width="90%" textaling="center"/>
+</p>
+<br/>
+<p align="center">
+    <img src="./img/readme/기획배경2.png" alt="기획배경2" width="90%"/>
 </p>
 
 <br/>
 
-- 여름 휴가에 맞추어 스파밸리 사이트의 방문자 숫자가 늘어나고 있음.
-
-<p align="center">
-    <img src="./images/readme/similarweb.png" alt="similarweb results" width="80%"/>
-</p>
+- 유사 사이트의 문제점
 
 <br/>
-
-- 기존 웹사이트의 문제점
-
 <p align="center">
-    <img src="./images/readme/original_page.png" alt="spavalley website" width="80%"/>
-</p>
-
-<p align="center">
-    <img src="./images/readme/background.png" alt="background" width="80%"/>
+    <img src="./img/readme/기획배경3.png" alt="기획배경3" width="90%"/>
 </p>
 
 ---
@@ -75,7 +66,7 @@
 <br>
 
 <p align="center">
-    <img src="./images/readme/tools.png" alt="develop tools" width="90%"/>
+    <img src="./img/readme/개발환경.png" alt="develop tools" width="90%"/>
 </p>
 
 ---
@@ -84,85 +75,37 @@
 
 <br>
 
-1.  Open API 활용 \_ 구글 API를 활용하여 지도 삽입
+1.  Open API 활용 \_ youtube API를 활용
 
     <p align="center">
-        <img src="./images/readme/map.png" alt="map api" width="100%"/>
+        <img src="./img/readme/구현기능1.png" alt="youtube api" width="100%"/>
     </p>
-
-    ```javascript
-    function initMap() {
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 20,
-        center: { lat: 35.78809837100381, lng: 128.63544134464186 }, // 지도의 중심 좌표
-      });
-
-      // 마커 정보
-      var locations = [{ testId: "location01", lat: 35.78809837100381, lng: 128.63544134464186 }];
-
-      // 마커 생성
-      for (var i = 0; i < locations.length; i++) {
-        var mapIcon = new google.maps.MarkerImage("images/map_google_marker.png");
-        // 이미지 파일 경로를 설정해주면 다른 마커아이콘을 쓸 수 있음!
-        var marker = new google.maps.Marker({
-          map: map,
-          position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
-          icon: mapIcon,
-        });
-        google.maps.event.addListener(
-          marker,
-          "click",
-          (function (marker, i) {
-            return function () {
-              // 마커 클릭시 실행할 이벤트를 설정해줄 수 있다
-              alert(locations[i].testId);
-            };
-          })(marker, i)
-        );
-      }
-    }
-    ```
-
-    ```html
-    <div id="map" style="width: 100%; height: 600px">지도가 들어가는 영역!</div>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=0000000000000000000000&callback=initMap&libraries=&v=weekly" async></script>
-    ```
 
 <br>
 
-2.  이미지 버튼 작은 이미지 클릭 시 큰 이미지가 바뀌게 구현
+2.  Open API 활용 \_ openweather API를 활용
 
-     <p align="center">
-         <img src="./images/readme/slider.gif" alt="slider_button" width="100%"/>
-     </p>
+    <p align="center">
+        <img src="./img/readme/구현기능2.png" alt="openweather api" width="100%"/>
+    </p>
 
-    ```js
-     // 이미지 클릭했을 때 변하게 하기 위해서
-     let $inner_img = document.querySelector("#inner_img"),
-         $outer_img = document.querySelector("#outer_img"),
+<br>
 
-     function innerButtonClickHandler() {
-     const alt = this.parentNode.querySelector("img").alt;
-     $inner_img.src = `./images/main_images/carousel_first/${alt}.jpg`;
-     }
+3.  Open API 활용 \_ 공공 데이터 API를 활용
 
-     function outerButtonClickHandler() {
-     const alt = this.parentNode.querySelector("img").alt;
-     $outer_img.src = `./images/main_images/carousel_second/${alt}.jpg`;
-     }
+    <p align="center">
+        <img src="./img/readme/구현기능3.png" alt="공공 api" width="100%"/>
+    </p>
 
-     let $$inner_buttons = document.querySelectorAll("#inner_slides div img, #inner_slides div p.sub_text, #inner_slides div i.fa-x");
-     let $$outer_buttons = document.querySelectorAll("#outer_slides div img, #outer_slides div p.sub_text");
+<br>
 
-     $$inner_buttons.forEach((button) => {
-     button.addEventListener("click", innerButtonClickHandler);
-     });
+1.  Open API 활용 \_ kakao map API를 활용
 
-     $$outer_buttons.forEach((button) => {
-     button.addEventListener("click", outerButtonClickHandler);
-     });
-    ```
+    <p align="center">
+        <img src="./img/readme/구현기능4.png" alt="kakao map api" width="100%"/>
+    </p>
+
+<br>
 
 ---
 
@@ -171,14 +114,15 @@
 <br>
 
 <p align="center">
-    <img src="./images/readme/%EC%86%8C%EA%B0%903.png" alt="
+    <img src="./img/readme/소감1.png" alt="
 impression1" width="90%"/>
-    <img src="./images/readme/%EC%86%8C%EA%B0%902.png" alt="
-impression2" width="90%"/>
-    <img src="./images/readme/%EC%86%8C%EA%B0%901.png" alt="
-impression3" width="90%"/>
+    <img src="./img/readme/소감2.png" alt="
+    impression2" width="90%"/>
+    <img src="./img/readme/소감3.png" alt="
+    impression3" width="90%"/>
+    <img src="./img/readme/소감4.png" alt="
+    impression4" width="90%"/>
 </p>
-
 ---
 
 <br>
