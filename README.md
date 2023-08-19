@@ -4,7 +4,7 @@
 
 제작기간 : " 23.07.05 - 23.08.11 " <br>
 
-### Demo : https://jolly-sfogliatella-0808c6.netlify.app/
+### Demo : [https://jolly-sfogliatella-0808c6.netlify.app/](https://calm-starburst-1bd7bf.netlify.app/)
 
 ---
 
